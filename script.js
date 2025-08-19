@@ -1,1 +1,1 @@
-document.getElementById(bulbasaur)
+document.getElementById("bulbasaur")
