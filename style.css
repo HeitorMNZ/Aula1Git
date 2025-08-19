@@ -8,3 +8,14 @@
     height: 460px;
     width: 736px;
 }
+
+body{
+    background-color: #2fb7e0;
+}
+
+button{
+    border-radius: 10px;
+    background-color: #029b4f;
+    color: white;
+    font-size: 30px;
+}
