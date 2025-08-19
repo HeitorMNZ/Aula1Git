@@ -1,6 +1,8 @@
 .conteiner{
+    margin-left: 10%;
+    margin-top: 10%;
     border: 3px solid black;
     border-radius: 10px;
-    height: 600px;
-    width: 600px;
+    height: 500px;
+    width: 500px;
 }
