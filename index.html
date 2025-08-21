@@ -1,28 +1,21 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
 <head>
-    <title>Pokedéx</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pokédex</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>   
-    <div class="conteiner">
-        
+<body>
+  <div class="pokedex">
+    <!-- Pokémon que aparece no visor -->
+    <img class="pokemon" src="bulbasaur.webp" alt="Pokémon atual">
 
-   <img src="https://img.pokemondb.net/sprites/ruby-sapphire/normal/charmander.png" alt="Charmander">
+    <!-- Botões invisíveis (sobre o D-pad) -->
+    <button class="ctrl ctrl--left" aria-label="Anterior"></button>
+    <button class="ctrl ctrl--right" aria-label="Próximo"></button>
+  </div>
 
-
-   <img id=bulbasaur src="https://img.pokemondb.net/sprites/scarlet-violet/normal/bulbasaur.png" alt="Bulbasaur">
-
-</div>
-
-
-    <button class="button1">
-        <- anterior
-    </button>
-        <button class="button2">
-            proximo ->
-        </button>
-
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>

@@ -1,29 +1,51 @@
-
-.conteiner{
-    background-image: url(imagens/Pokémon\ Rpg.jpg);
-    margin-left: 10%;
-    margin-top: 10%;
-    border: 3px solid black;
-    border-radius: 10px;
-    height: 460px;
-    width: 736px;
-}
-
+*{box-sizing:border-box}
 body{
-    background-color: #2fb7e0;
+  margin:0;
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:#f6f6f6;
 }
 
-.button1{
-    margin-left: 11%;
-    border-radius: 10px;
-    background-color: #029b4f;
-    color: white;
-    font-size: 30px;
+/* Área da Pokédex com fundo */
+.pokedex{
+  position:relative;
+  width:600px;
+  height:913px; /* ajuste se sua pokedex.webp tiver outra altura */
+  background:url("pokedex.webp") center/contain no-repeat;
 }
-.button2{
-    margin-left: 20%;
-    border-radius: 10px;
-    background-color: #029b4f;
-    color: white;
-    font-size: 30px;
+
+/* Pokémon dentro do visor */
+.pokemon{
+  position:absolute;
+  top:145px;   /* ajuste fino */
+  left:130px;  /* ajuste fino */
+  width:340px;
+  height:auto;
+  z-index:2;
+  pointer-events:none; /* clique passa pelos pixels do Pokémon */
+}
+
+/* Botões sobre o D-pad */
+.ctrl{
+  position:absolute;
+  width:30px;
+  height:30px;
+  z-index:3;
+  background:rgba(0,0,0,.15); /* deixe visível p/ teste, depois mude p/ opacity:0 */
+  border:none;
+  outline:2px dashed #08f;
+  cursor:pointer;
+}
+.ctrl--left{ left:55px; bottom:95px; }
+.ctrl--right{ left:125px; bottom:95px; }
+
+/* Responsivo opcional */
+@media (max-width:650px){
+  .pokedex{ width:90vw; height:137vw; }
+  .pokemon{ top:22%; left:21.5%; width:56%; }
+  .ctrl{ width:7%; height:7%; }
+  .ctrl--left{ left:26.5%; bottom:10.5%; }
+  .ctrl--right{ left:36.5%; bottom:10.5%; }
 }
